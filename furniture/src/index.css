@@ -1,0 +1,99 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@theme{
+  --font-inter: "Inter", sans-serif;
+}
+.banner_slide_item{
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7.5rem;
+ 
+}
+.banner_image{
+  position: relative;
+  z-index:2;
+}
+.banner_image::before{
+  content:"";
+  position:absolute;
+  top:0;
+  right:0;
+  max-width:480px;
+  width:100%;
+  min-height: 480px;
+  height:100%;
+  background-color: #cfe9c6;
+  border-radius: 100%;
+  z-index:-1;
+}
+.slick-dots {
+    position: absolute;
+    bottom: -30px !important;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 22px !important;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: #d2691e !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 50px !important;
+    line-height: 1;
+    opacity: .75;
+    color: #d2691e !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  z-index: 5 !important;
+}
+.delivery{
+transform: translateY(-5rem);
+border-radius: 12px;
+}
+.brand_item{
+ width:8rem;
+ transform:translateY(-15rem) translateX(4rem);
+}
+.features_slider{
+  transform: translateX(6rem);
+}
+.productTypes{
+  transform:translatex(5rem);
+}
+.client-say{
+position: relative;
+transform:translateX(3rem)
+}
+.client-say::before{
+  position:absolute;
+  content:"";
+  top:0;
+  left: 0;
+  width:3px;
+  height: 100%;
+  background-color: #723d0d;
+}
+
